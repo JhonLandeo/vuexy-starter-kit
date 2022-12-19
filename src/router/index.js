@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import clientRoute from '../views/clientes/router/client.route'
+import CategoryRoute from '@/views/category/router/index'
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,7 @@ const router = new VueRouter({
       },
     },
     clientRoute,
+    CategoryRoute,
    
     {
       path: '/login',
