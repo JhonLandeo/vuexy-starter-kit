@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import clientRoute from '../views/clientes/router/client.route'
 import CategoryRoute from '@/views/category/router/index'
+import InvoiceRoute from '@/views/invoice/router/index'
+import ProductRoute from '@/views/product/router/index'
 
 Vue.use(VueRouter)
 
@@ -42,6 +44,8 @@ const router = new VueRouter({
     },
     clientRoute,
     CategoryRoute,
+    ProductRoute,
+    InvoiceRoute,
    
     {
       path: '/login',
