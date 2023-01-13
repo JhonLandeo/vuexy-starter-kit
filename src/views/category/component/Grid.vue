@@ -215,7 +215,7 @@ export default {
         });
         this.$refs["ref-category"].hide();
         this.nameData = "";
-        this.descriptionData = "";
+        this.descriptionData = "";  
         this.$refs.tableCategory.refresh();
       } catch (error) {
         console.log(error);
