@@ -11,20 +11,34 @@ class Product {
     return data;
   }
 
-  async insertProduct(params){
-    const data = axios.post(urlStore,params).then((response) => {
+  async insertProduct(params) {
+    const data = axios.post(urlStore, params).then((response) => {
       return response.data;
     });
     return data;
 
   }
 
-  async getProduct(params){
-    const data = axios.post(urlProduct,params).then((response) => {
+  async getProduct(params) {
+    const data = axios.post(urlProduct, params).then((response) => {
       return response.data;
     });
     return data;
   }
-  
+
+  async deleteProduct(params) {
+    const data = axios.post("http://127.0.0.1:8000/api/product-delete", params).then((response) => {
+      return response.data;
+    });
+  }
+
+  async updateProduct(params) {
+    const data = axios.post("http://127.0.0.1:8000/api/product-update", params).then((response) => {
+      return response.data;
+    });
+    return data;
+  }
+
+
 }
 export default new Product();
